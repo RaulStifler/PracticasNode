@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+	head
+		title Plantilla JADE 1
+		link(rel='stylesheet',href='stylesheets/estilos.css')
+	body
+		#contenedor
+			#cabecera Esta es la Cabecera
+			#partecentral
+				#menu
+					each enlace in enlaces
+						a(class="boton" href="#{enlace.direccion}") #{enlace.texto}
+				#contenido
+					each parrafo in parrafos
+						p #{parrafo}
+				.clear
+			#piepagina.
+				Aqui va el pie de pagina
+				Aqui va el pie de Pagina

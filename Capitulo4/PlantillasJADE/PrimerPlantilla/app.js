@@ -22,6 +22,35 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var jsonVista = {
+	enlaces: [{
+		texto: 'Enlace 1',
+		direccion: '#'
+	},{
+		texto: 'Enlace 2',
+		direccion: '#'
+	},{
+		texto: 'Enlace 3',
+		direccion: '#'
+	},{
+		texto: 'Enlace 4',
+		direccion: '#'
+	},
+	{
+		texto: 'Enlace 5',
+		direccion: '#'
+	}],
+	parrafos: [
+	'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nulla nam tenetur expedita, at temporibus deserunt. Mollitia neque commodi esse, autem beatae, expedita architecto labore deleniti consectetur, quos, corrupti consequuntur.',
+	'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+	'Lorem ipsum dolor sit amet!',
+	'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus commodi totam natus iure, sint, voluptatibus fugiat at accusantium omnis a accusamus vitae eligendi aut consectetur, aliquam nam voluptatem ab assumenda.',
+	'Lorem ipsum dolor sit amet.']
+};
+app.get('/',function(req,res){
+	res.render('index',jsonVista);
+});
+
 app.use('/', index);
 app.use('/users', users);
 

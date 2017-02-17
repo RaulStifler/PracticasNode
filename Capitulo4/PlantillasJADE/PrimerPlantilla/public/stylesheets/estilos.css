@@ -1,0 +1,64 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: gray;
+}
+div{
+	border: 1px solid black;
+}
+div#contenedor{
+	width: 80%;
+	margin: 0 auto;
+}
+div#contenedor div#cabecera{
+	text-align: center;
+	font-size: xx-large;
+	padding: 20px 0;
+	color: white;
+	background: red;
+}
+div#contenedor div#partecentral div#menu{
+	width: 20%;
+	float: left;
+	border: 0;
+	border-right: 2px solid black;
+	text-align: center;
+}
+div#contenedor div#partecentral div#menu a.boton,
+div#contenedor div#partecentral div#menu a.boton:visited{
+	margin: 20px;
+	display: inline-block;
+	padding: 10px 15px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: white;
+	background: steelblue;
+}
+div#contenedor div#partecentral div#menu a.boton:hover,
+div#contenedor div#partecentral div#menu a.boton:active{
+	background: gray;
+}
+div#contenedor div#partecentral div#contenido{
+	width: 80%;
+	float: left;
+	border: 0;
+	height: auto;
+}
+div#contenedor div#partecentral div#contenido p{
+	margin: 15px;
+	text-align: justify;
+	color: black;
+	font-family: sans-serif;
+}
+div#contenedor div#piepagina{
+	text-align: center;
+	font-size: smaller;
+	padding: 10px 0;
+	color: white;
+	background: red;
+}
+div.clear{
+	clear: both;
+	border: 0;
+}
