@@ -1,5 +1,19 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+	h1= title
+	p Welcome to #{title}
+
+	- var user = {description: 'foo bar baz'}
+	- var authorised = false
+	#user
+		if user.description
+			h2 Description
+			p.description=user.description
+		else if authorised
+			h2 Description
+			p.descriptio.
+				User has not description,
+				why not add one...
+		else
+			h1 Description
+			p.description User has not description
