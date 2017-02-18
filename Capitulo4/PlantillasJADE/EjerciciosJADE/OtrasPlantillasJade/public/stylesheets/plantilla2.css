@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: gray;
+}
+div{
+	border: 1px solid black;
+}
+div#contenedor{
+	width: 80%;
+	margin: 0 auto;
+}
+div#contenedor div#cabecera{
+	color: white;
+	background: red;
+}
+div#contenedor div#cabecera div.enlace{
+	border: none;
+	width: 20%;
+	float: left;
+	padding: 20px 0;
+	text-align: center;
+}
+div#contenedor div#cabecera div.enlace a.boton,
+div#contenedor div#cabecera div.enlace a.boton:visited{
+	margin: 20px;
+	display: inline-block;
+	padding: 10px 15px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	background-color: silver;
+}
+div#contenedor div#cabecera div.enlace a.boton:hover{
+	background: gray;
+}
+div#contenedor div#partecentral{
+	background: olive;
+}
+div#contenedor div#partecentral div#descripcion{
+	width: 30%;
+	border: none;
+	float: left;
+	padding: 10px;
+}
+div#contenedor div#partecentral div#contenido{
+	width: 70%;
+	border: none;
+	border-left: 2px solid black;
+	float: left;
+	padding: 10px;
+}
+div#contenido p, div#descripcion p{
+	text-align: justify;
+}
+div#contenedor div#piepagina{
+	text-align: center;
+	font-size: smaller;
+	padding: 10px 0;
+	color: white;
+	background-color: red;
+}
+div.clear{
+	clear: both;
+	border: 0;
+}

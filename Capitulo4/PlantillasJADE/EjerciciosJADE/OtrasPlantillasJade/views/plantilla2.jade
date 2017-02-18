@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+	head
+		title Plantilla 2
+		link(rel='stylesheet', href='/stylesheets/plantilla2.css')
+	body
+		#contenedor
+			#cabecera
+				each enlace in enlaces
+					.enlace
+						a.boton(href="#{enlace.direccion}") #{enlace.texto}
+				.clear
+			#partecentral
+				#descripcion
+					p #{descripcion}
+				#contenido
+					p #{contenido}
+				.clear
+			#piepagina Aqui va el pie de Pagina.

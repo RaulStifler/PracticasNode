@@ -12,6 +12,7 @@ var onError = utils.onError;
 var onListening = utils.onListening;
 var routes = require('./controller/index');
 var users = require('./controller/users');
+var stifler = require('./controller/stifler');
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'viewsfiles')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/stifler', stifler);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
